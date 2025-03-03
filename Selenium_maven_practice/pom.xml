@@ -77,6 +77,49 @@
 </plugins>
 </build>
   </profile>
+  
+  
+  
+  <profile>
+  <id>DPL</id>
+   <build>
+  <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>distrubuted.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+</build>
+  </profile>
+  
+  
+    <profile>
+  <id>PPL</id>
+   <build>
+  <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>parallel.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+</build>
+  </profile>
+  
+  
+  
+  
   </profiles>
   
   

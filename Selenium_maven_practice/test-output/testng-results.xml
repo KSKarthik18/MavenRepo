@@ -1,72 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-03T05:02:16Z" name="Default suite" finished-at="2025-03-03T05:04:53Z" duration-ms="156745">
+  <suite started-at="2025-03-03T16:07:00 IST" name="Suite" finished-at="2025-03-03T16:08:31 IST" duration-ms="90633">
     <groups>
       <group name="Regression_test">
-        <method signature="Working_with_Cnt_TC_baseclassTest.Contacts_06()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" name="Contacts_06" class="contacts.Working_with_Cnt_TC_baseclassTest"/>
-        <method signature="Working_with_Cnt_TC_baseclassTest.contacs_02()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" name="contacs_02" class="contacts.Working_with_Cnt_TC_baseclassTest"/>
+        <method signature="Working_with_Cnt_TC_baseclassTest.Contacts_06()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" name="Contacts_06" class="contacts.Working_with_Cnt_TC_baseclassTest"/>
+        <method signature="Working_with_Cnt_TC_baseclassTest.contacs_02()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" name="contacs_02" class="contacts.Working_with_Cnt_TC_baseclassTest"/>
+        <method signature="Working_with_Org_TC_baseclassTest.organization_02()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" name="organization_02" class="organization.Working_with_Org_TC_baseclassTest"/>
+        <method signature="Working_with_Org_TC_baseclassTest.organization_03()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" name="organization_03" class="organization.Working_with_Org_TC_baseclassTest"/>
       </group> <!-- Regression_test -->
       <group name="Smoke_Test">
-        <method signature="Working_with_Cnt_TC_baseclassTest.contacts_01()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" name="contacts_01" class="contacts.Working_with_Cnt_TC_baseclassTest"/>
+        <method signature="Working_with_Cnt_TC_baseclassTest.contacts_01()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" name="contacts_01" class="contacts.Working_with_Cnt_TC_baseclassTest"/>
+        <method signature="Working_with_Org_TC_baseclassTest.organization_01()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" name="organization_01" class="organization.Working_with_Org_TC_baseclassTest"/>
       </group> <!-- Smoke_Test -->
     </groups>
-    <test started-at="2025-03-03T05:02:16Z" name="Default test" finished-at="2025-03-03T05:04:53Z" duration-ms="156745">
-      <class name="contacts.Working_with_Cnt_TC_baseclassTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:02:16Z" name="configBS" finished-at="2025-03-03T05:02:16Z" duration-ms="406" status="PASS">
+    <test started-at="2025-03-03T16:07:00 IST" name="Test_2" finished-at="2025-03-03T16:08:12 IST" duration-ms="72233">
+      <class name="organization.Working_with_Org_TC_baseclassTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:00 IST" name="configBS" finished-at="2025-03-03T16:07:00 IST" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:02:16Z" name="configBC" finished-at="2025-03-03T05:02:23Z" duration-ms="7272" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:00 IST" name="configBC" finished-at="2025-03-03T16:07:05 IST" duration-ms="4595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:02:23Z" name="configBM" finished-at="2025-03-03T05:02:54Z" duration-ms="31033" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:05 IST" name="configBM" finished-at="2025-03-03T16:07:11 IST" duration-ms="5797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="Contacts_06()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:02:54Z" name="Contacts_06" finished-at="2025-03-03T05:04:08Z" duration-ms="73453" status="PASS">
+        <test-method signature="organization_01()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:11 IST" name="organization_01" finished-at="2025-03-03T16:07:26 IST" duration-ms="15751" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Contacts_06 -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:08Z" name="configAM" finished-at="2025-03-03T05:04:12Z" duration-ms="4210" status="PASS">
+        </test-method> <!-- organization_01 -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:26 IST" name="configAM" finished-at="2025-03-03T16:07:29 IST" duration-ms="2112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:12Z" name="configBM" finished-at="2025-03-03T05:04:16Z" duration-ms="3672" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:29 IST" name="configBM" finished-at="2025-03-03T16:07:33 IST" duration-ms="4201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="contacs_02()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:16Z" name="contacs_02" finished-at="2025-03-03T05:04:29Z" duration-ms="13625" status="PASS">
+        <test-method signature="organization_02()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:33 IST" name="organization_02" finished-at="2025-03-03T16:07:50 IST" duration-ms="16681" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contacs_02 -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:29Z" name="configAM" finished-at="2025-03-03T05:04:32Z" duration-ms="2302" status="PASS">
+        </test-method> <!-- organization_02 -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:50 IST" name="configAM" finished-at="2025-03-03T16:07:52 IST" duration-ms="2757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:32Z" name="configBM" finished-at="2025-03-03T05:04:36Z" duration-ms="4551" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:52 IST" name="configBM" finished-at="2025-03-03T16:07:56 IST" duration-ms="4221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="contacts_01()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:36Z" name="contacts_01" finished-at="2025-03-03T05:04:50Z" duration-ms="13918" status="PASS">
+        <test-method signature="organization_03()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:07:56 IST" name="organization_03" finished-at="2025-03-03T16:08:10 IST" duration-ms="13291" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contacts_01 -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:50Z" name="configAM" finished-at="2025-03-03T05:04:52Z" duration-ms="2288" status="PASS">
+        </test-method> <!-- organization_03 -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:08:10 IST" name="configAM" finished-at="2025-03-03T16:08:12 IST" duration-ms="2138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:52Z" name="configAC" finished-at="2025-03-03T05:04:53Z" duration-ms="378" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:08:12 IST" name="configAC" finished-at="2025-03-03T16:08:12 IST" duration-ms="560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@4470fbd6]" started-at="2025-03-03T05:04:53Z" name="configAS" finished-at="2025-03-03T05:04:53Z" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:organization.Working_with_Org_TC_baseclassTest@5aebe890]" started-at="2025-03-03T16:08:31 IST" name="configAS" finished-at="2025-03-03T16:08:31 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
+      </class> <!-- organization.Working_with_Org_TC_baseclassTest -->
+    </test> <!-- Test_2 -->
+    <test started-at="2025-03-03T16:07:00 IST" name="Test_1" finished-at="2025-03-03T16:08:31 IST" duration-ms="90633">
+      <class name="contacts.Working_with_Cnt_TC_baseclassTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:07:00 IST" name="configBC" finished-at="2025-03-03T16:07:05 IST" duration-ms="4595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:07:05 IST" name="configBM" finished-at="2025-03-03T16:07:11 IST" duration-ms="6392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="Contacts_06()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:07:11 IST" name="Contacts_06" finished-at="2025-03-03T16:07:45 IST" duration-ms="33230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Contacts_06 -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:07:45 IST" name="configAM" finished-at="2025-03-03T16:07:46 IST" duration-ms="1798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:07:46 IST" name="configBM" finished-at="2025-03-03T16:07:50 IST" duration-ms="4115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="contacs_02()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:07:50 IST" name="contacs_02" finished-at="2025-03-03T16:08:05 IST" duration-ms="14425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contacs_02 -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:08:05 IST" name="configAM" finished-at="2025-03-03T16:08:07 IST" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:08:07 IST" name="configBM" finished-at="2025-03-03T16:08:11 IST" duration-ms="3839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="contacts_01()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:08:11 IST" name="contacts_01" finished-at="2025-03-03T16:08:28 IST" duration-ms="17228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contacts_01 -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:08:28 IST" name="configAM" finished-at="2025-03-03T16:08:30 IST" duration-ms="2537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:contacts.Working_with_Cnt_TC_baseclassTest@7c6908d7]" started-at="2025-03-03T16:08:30 IST" name="configAC" finished-at="2025-03-03T16:08:31 IST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
       </class> <!-- contacts.Working_with_Cnt_TC_baseclassTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test_1 -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -41,12 +41,12 @@ public class Baseclass {
 		
 		@Parameters("BROWSER")
 		@BeforeClass(alwaysRun = true)
-		public void configBC(String Brwser) throws Exception {
+		public void configBC(String Bro) throws Exception {
 			System.out.println("Execute Launch the browser");
 			ChromeOptions op= new ChromeOptions();
 			op.addArguments("--incognito");
-			String br=System.getProperty("browser",Brwser);
-			String Browser =br;
+			String br=flib.getDatafromPropertiesFile("browser");
+			String Browser =Bro;
 					//BROWSER;
 					//flib.getDatafromPropertiesFile("browser");
 			
@@ -60,6 +60,7 @@ public class Baseclass {
 				driver= new ChromeDriver();
 			}
 			wlib.maximize(driver);
+			
 			sdriver=driver;
 			UtilityClass.setDriver(driver);
 			
@@ -71,10 +72,10 @@ public class Baseclass {
 			String Url = flib.getDatafromPropertiesFile("url");
 			String Username = flib.getDatafromPropertiesFile("username");
 			String Password = flib.getDatafromPropertiesFile("password");
-		
-			Loginpage lp= new Loginpage(driver);
-			wlib.implicitwait(driver);
+			
 			driver.get(Url);
+			wlib.implicitwait(driver);
+			Loginpage lp= new Loginpage(driver);
 			lp.logintoApp(Username, Password);
 			
 		}

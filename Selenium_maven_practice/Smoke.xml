@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+
 <groups>
 <run>
 	<include name="Smoke_Test"></include>
 </run>
 </groups>
+<listeners>
+<listener class-name="com.comcast.crm.generic.listener_Utility.Listener"></listener></listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="contacts.Working_with_Cnt_TC_baseclassTest"/>

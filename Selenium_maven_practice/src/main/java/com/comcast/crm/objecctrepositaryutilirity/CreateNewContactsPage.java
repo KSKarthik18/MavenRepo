@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CreateNewContactsPage {
 	//step3 
-	WebDriver driver;
+	
 	public CreateNewContactsPage(WebDriver driver) {
-		this.driver=driver;
+	
 		PageFactory.initElements(driver,this);
 	}
 	

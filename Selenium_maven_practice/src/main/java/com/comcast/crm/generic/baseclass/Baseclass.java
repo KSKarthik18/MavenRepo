@@ -30,7 +30,7 @@ public class Baseclass {
 	    public Excelutility elib= new Excelutility();
 		public Database_utility dlib= new Database_utility();
 		public Fileutility flib= new Fileutility();
-		public WebDriver driver;
+		public WebDriver driver=null;
 		public static WebDriver sdriver;
 	
 		@BeforeSuite(alwaysRun = true)
@@ -59,6 +59,7 @@ public class Baseclass {
 			}else {
 				driver= new ChromeDriver();
 			}
+			wlib.maximize(driver);
 			sdriver=driver;
 			UtilityClass.setDriver(driver);
 			
@@ -73,7 +74,6 @@ public class Baseclass {
 		
 			Loginpage lp= new Loginpage(driver);
 			wlib.implicitwait(driver);
-			wlib.maximize(driver);
 			driver.get(Url);
 			lp.logintoApp(Username, Password);
 			

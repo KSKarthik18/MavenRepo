@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Contactsinfopage {
-	WebDriver driver;
+	
 	public Contactsinfopage(WebDriver driver) {
-		this.driver=driver;
+		
 		PageFactory.initElements(driver, this);
 	}
 	

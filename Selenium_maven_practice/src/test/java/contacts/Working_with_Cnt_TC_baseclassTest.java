@@ -43,6 +43,7 @@ public class Working_with_Cnt_TC_baseclassTest extends Baseclass {
 //		}else {
 //			System.out.println(contname+ " Not created");
 //		}
+		System.out.println("test case 1 completed");
 	}
 	
 	@Test(groups = "Regression_test")
@@ -74,6 +75,7 @@ public class Working_with_Cnt_TC_baseclassTest extends Baseclass {
 		Assert.assertEquals(actualdate,srtdate);
 		Assert.assertEquals(datereq, ndate.trim());
 	
+		System.out.println("test case 2 completed");
 	}
 	
 	@Test(groups = "Regression_test")
@@ -127,7 +129,7 @@ public class Working_with_Cnt_TC_baseclassTest extends Baseclass {
 		}else {
 			System.out.println("Organization not verified");
 		}
-
+			System.out.println("test case 3 completed");
 	}
 	
 }

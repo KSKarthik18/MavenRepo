@@ -1,6 +1,8 @@
 	package com.comcast.crm.generic.listener_Utility;
 
+import java.awt.Desktop;
 import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
@@ -71,7 +73,7 @@ public class Listener implements ITestListener, ISuiteListener{
 		//UtilityClass.getTest().log(Status.FAIL, result.getThrowable());
 		TakesScreenshot ts = (TakesScreenshot) Baseclass.sdriver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dst = new File("./screenshot/"+method+new Javautility().getsystemdateYYYYDDMM()+".jpeg");
+		File dst = new File("./screenshot/"+method+new Javautility().getsystemdateYYYYDDMM()+".png");
 		try {
 			FileUtils.copyFile(src, dst);
 			String p = dst.getAbsolutePath();
@@ -97,7 +99,8 @@ public class Listener implements ITestListener, ISuiteListener{
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		ExtentSparkReporter htmlreport = new ExtentSparkReporter("./extent/report.html");
+		File file=new File("report.html");
+		ExtentSparkReporter htmlreport = new ExtentSparkReporter(file);
 		htmlreport.config().setDocumentTitle("SDET-30 Execution Report");
 		htmlreport.config().setTheme(Theme.DARK);
 		htmlreport.config().setReportName("Selenium execution Report");
@@ -116,7 +119,12 @@ public class Listener implements ITestListener, ISuiteListener{
 		// TODO Auto-generated method stub
 		
 		report.flush();
-
+		try {
+			Desktop.getDesktop().browse(new File("report.htnl").toURI());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	

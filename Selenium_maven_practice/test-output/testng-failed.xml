@@ -5,12 +5,13 @@
     <listener class-name="com.comcast.crm.generic.listener_Utility.Listener"/>
   </listeners>
   <test thread-count="2" parallel="tests" name="Test_with_edge(failed)">
-    <parameter name="BROWSER" value="edge"/>
+    <parameter name="BROWSER" value="chrome"/>
     <classes>
       <class name="organization.Working_with_Org_TC_baseclassTest">
         <methods>
           <include name="organization_02"/>
           <include name="configBM"/>
+          <include name="organization_01"/>
           <include name="organization_03"/>
           <include name="configAM"/>
           <include name="configBC"/>

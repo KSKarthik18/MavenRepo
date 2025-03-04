@@ -73,7 +73,7 @@ public class Listener implements ITestListener, ISuiteListener{
 		//UtilityClass.getTest().log(Status.FAIL, result.getThrowable());
 		TakesScreenshot ts = (TakesScreenshot) Baseclass.sdriver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dst = new File("./screenshot/"+method+new Javautility().getsystemdateYYYYDDMM()+".png");
+		File dst = new File("./screenshot/"+method+new Javautility().getsystemdateYYYYDDMM()+".jpeg");
 		try {
 			FileUtils.copyFile(src, dst);
 			String p = dst.getAbsolutePath();
@@ -99,7 +99,7 @@ public class Listener implements ITestListener, ISuiteListener{
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		File file=new File("report.html");
+		File file=new File("./extnt/report.html");
 		ExtentSparkReporter htmlreport = new ExtentSparkReporter(file);
 		htmlreport.config().setDocumentTitle("SDET-30 Execution Report");
 		htmlreport.config().setTheme(Theme.DARK);
@@ -120,7 +120,7 @@ public class Listener implements ITestListener, ISuiteListener{
 		
 		report.flush();
 		try {
-			Desktop.getDesktop().browse(new File("report.htnl").toURI());
+			Desktop.getDesktop().browse(new File("report.html").toURI());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

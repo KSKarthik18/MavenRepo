@@ -124,7 +124,7 @@ public class Working_with_Cnt_TC_baseclassTest extends Baseclass {
 	
 		//organization name verify
 		String Actualorgname = driver.findElement(By.xpath("(//a[text()='"+orgname+"'])[2]")).getText();
-		if(Actualorgname.equals(orgname)) {
+		if(Actualorgname.equals("orgname")) {
 			System.out.println("Verified");
 		}else {
 			System.out.println("Organization not verified");

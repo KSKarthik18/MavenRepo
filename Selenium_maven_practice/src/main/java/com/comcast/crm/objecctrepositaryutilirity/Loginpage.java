@@ -15,7 +15,7 @@ public class Loginpage extends Webdriverutitlity {
 	//rule1 create a seperate java classs
 	//rule 2 object creation
 	
-	@FindBy(name="user_name")
+	@FindBy(xpath = "//input[@name='user_name']")
 	private WebElement Usernameedt;
 	
 	@FindBy(name="user_password")

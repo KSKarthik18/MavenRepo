@@ -43,7 +43,7 @@ public class Baseclass {
 		@Parameters("BROWSER")
 		
 		@BeforeClass(alwaysRun = true)
-		public void configBC( @Optional("chrome") String Browser) throws Exception {
+		public void configBC( /*@Optional("chrome")*/ String Browser) throws Exception {
 			System.out.println("Execute Launch the browser");
 			ChromeOptions op= new ChromeOptions();
 			op.addArguments("--incognito");
@@ -64,7 +64,7 @@ public class Baseclass {
 			wlib.maximize(driver);
 			
 			sdriver=driver;
-			UtilityClass.setDriver(driver);
+			//UtilityClass.setDriver(driver);
 			
 		}
 		

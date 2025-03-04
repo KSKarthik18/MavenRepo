@@ -98,8 +98,8 @@ public class Working_with_Cnt_TC_baseclassTest extends Baseclass {
 		cop.writedata(orgname);
 		
 		WebElement ele = hp.getCntlnk();
-		System.out.println(ele);
-		Thread.sleep(2000);
+		//System.out.println(ele);
+		Thread.sleep(3000);
 		ele.click();
        
 		Contactspage cp= new Contactspage(driver);

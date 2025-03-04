@@ -18,7 +18,7 @@ public class Homepage {
 	@FindBy(xpath = "//a[text()='Contacts']")
 	private WebElement cntlnk;
 	
-	@FindBy(xpath = "(//td[@valign='bottom'])[2]")
+	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
 	private WebElement signout;
 	
 	@FindBy(linkText = "Sign Out")

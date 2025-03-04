@@ -5,21 +5,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.comcast.crm.generic.databaseutility.Database_utility;
 import com.comcast.crm.generic.fileutility.Excelutility;
 import com.comcast.crm.generic.fileutility.Fileutility;
 import com.comcast.crm.generic.webdriverutility.Javautility;
-import com.comcast.crm.generic.webdriverutility.UtilityClass;
 import com.comcast.crm.generic.webdriverutility.Webdriverutitlity;
 import com.comcast.crm.objecctrepositaryutilirity.Homepage;
 import com.comcast.crm.objecctrepositaryutilirity.Loginpage;
@@ -43,12 +40,12 @@ public class Baseclass {
 		@Parameters("BROWSER")
 		
 		@BeforeClass(alwaysRun = true)
-		public void configBC( /*@Optional("chrome")*/ String Browser) throws Exception {
+		public void configBC( /*@Optional("chrome")*/ String Browse) throws Exception {
 			System.out.println("Execute Launch the browser");
 			ChromeOptions op= new ChromeOptions();
 			op.addArguments("--incognito");
 			//String br=flib.getDatafromPropertiesFile("browser");
-			
+			String Browser=Browse;
 					//BROWSER;
 					//flib.getDatafromPropertiesFile("browser");
 			

@@ -5,7 +5,7 @@
 <listener class-name="com.comcast.crm.generic.listener_Utility.Listener"></listener></listeners>
   
   <test thread-count="2" parallel="tests" name="Test_with_chrome">
-  <parameter name="BROWSER" value="edge"></parameter>
+  <parameter name="BROWSER" value="firefox"></parameter>
     <classes>
       <class name="contacts.Working_with_Cnt_TC_baseclassTest"/>
     </classes>

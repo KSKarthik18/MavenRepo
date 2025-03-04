@@ -42,7 +42,7 @@ public class Working_with_Org_TC_baseclassTest extends Baseclass {
 		} else {
 			System.out.println("Fail");
 		}
-		System.out.println("test case 3 Completed");
+		System.out.println("test case  ORG1 Completed");
 	}
 
 	@Test(groups="Regression_test")
@@ -77,7 +77,7 @@ public class Working_with_Org_TC_baseclassTest extends Baseclass {
 		} else {
 			System.out.println("Fail");
 		}
-		System.out.println("test case 2 Completed");
+		System.out.println("test case ORG2 Completed");
 	}
 	
 	@Test(groups="Regression_test")
@@ -121,7 +121,7 @@ public class Working_with_Org_TC_baseclassTest extends Baseclass {
 		}else {
 			System.out.println("failed to add");
 		}
-		System.out.println("test case 1 Completed");
+		System.out.println("test case ORG3 Completed");
 	}
 }
 

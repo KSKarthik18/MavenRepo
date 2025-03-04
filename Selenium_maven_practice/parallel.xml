@@ -3,13 +3,14 @@
 <suite thread-count="2" parallel="tests" name="Suite">
 <listeners>
 <listener class-name="com.comcast.crm.generic.listener_Utility.Listener"></listener></listeners>
+  
   <test thread-count="2" parallel="tests" name="Test_with_chrome">
   <parameter name="BROWSER" value="chrome"></parameter>
     <classes>
       <class name="contacts.Working_with_Cnt_TC_baseclassTest"/>
-     
     </classes>
   </test> <!-- Test -->
+  
   
    <test thread-count="2" parallel="tests" name="Test_with_edge">
    <parameter name="BROWSER" value="edge"></parameter>

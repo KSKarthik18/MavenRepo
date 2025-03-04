@@ -12,6 +12,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.comcast.crm.generic.databaseutility.Database_utility;
@@ -40,6 +41,7 @@ public class Baseclass {
 		}
 		
 		@Parameters("BROWSER")
+		
 		@BeforeClass(alwaysRun = true)
 		public void configBC(String Bro) throws Exception {
 			System.out.println("Execute Launch the browser");

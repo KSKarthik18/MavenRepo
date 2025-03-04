@@ -10,6 +10,7 @@
      
     </classes>
   </test> <!-- Test -->
+  
    <test thread-count="2" parallel="tests" name="Test_with_edge">
    <parameter name="BROWSER" value="edge"></parameter>
     <classes>

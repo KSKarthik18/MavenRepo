@@ -40,12 +40,12 @@ public class Baseclass {
 		@Parameters("BROWSER")
 		
 		@BeforeClass(alwaysRun = true)
-		public void configBC( /*@Optional("chrome")*/ String Browse) throws Exception {
+		public void configBC( /*@Optional("chrome" String Browse*/) throws Exception {
 			System.out.println("Execute Launch the browser");
 			ChromeOptions op= new ChromeOptions();
 			op.addArguments("--incognito");
 			//String br=flib.getDatafromPropertiesFile("browser");
-			String Browser=Browse;
+			String Browser=flib.getDatafromPropertiesFile("browser");
 					//BROWSER;
 					//flib.getDatafromPropertiesFile("browser");
 			

@@ -10,6 +10,7 @@ public class Gitbash {
 		System.out.println("hi kasku");
 		System.out.println("hi vb");
 		System.out.println("hi kumar");
+		System.out.println("hi ammu");
 	}
 
 }
